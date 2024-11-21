@@ -1,0 +1,28 @@
+plugins {
+    id 'groovy'
+    id 'java'
+}
+group 'online.kobalty'
+version '0.1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.moandjiezana.toml:toml4j:0.7.2'
+    implementation 'org.apache.groovy:groovy-all:5.0.0-alpha-11'
+
+    testImplementation(platform("org.junit:junit-bom:5.11.3"))
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.11.3'
+    // testImplementation 'com.lesfurets:jenkins-pipeline-unit:1.3' // Optional, for Jenkins-specific mocking
+}
+java {
+    withSourcesJar()
+}
+test {
+    useJUnitPlatform()
+    reports {
+        html.required = true // Enable HTML test reports
+    }
+}

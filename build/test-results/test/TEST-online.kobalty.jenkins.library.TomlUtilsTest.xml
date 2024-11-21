@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="online.kobalty.jenkins.library.TomlUtilsTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2024-11-22T13:31:43" hostname="DESKTOP-8L07GEL" time="0.277">
+  <properties/>
+  <testcase name="loadConfig should return null when the TOML file is not found()" classname="online.kobalty.jenkins.library.TomlUtilsTest" time="0.216"/>
+  <testcase name="loadConfig should return null when the TOML file is invalid()" classname="online.kobalty.jenkins.library.TomlUtilsTest" time="0.041"/>
+  <testcase name="loadConfig should return a map of values when the TOML file is valid()" classname="online.kobalty.jenkins.library.TomlUtilsTest" time="0.018"/>
+  <system-out><![CDATA[Error: Cannot invoke method getPath() on null object
+Did you put the file in the `main/resources` directory?
+Error parsing TOML data: Key is not followed by an equals sign on line 1: {
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
